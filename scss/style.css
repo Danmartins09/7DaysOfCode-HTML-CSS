@@ -4,7 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 * a {
@@ -13,7 +13,8 @@
   color: var(--medium-text-color);
 }
 
-* a, * button {
+* a,
+* button {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -82,5 +83,92 @@
   border-radius: 8px;
   background: var(--colored-text-color);
   color: var(--light-text-color);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header h2 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--colored-text-color);
+  margin: 96px 0 24px 0;
+}
+
+.header h3 {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.02em;
+  color: var(--dark-text-color);
+  margin-bottom: 36px;
+}
+
+.header p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  text-align: center;
+  color: var(--medium-text-color);
+  width: 791px;
+  margin-bottom: 107px;
+}
+
+.metricas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.metricas .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 280px;
+}
+
+.metricas .item .number {
+  font-weight: 600;
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+  letter-spacing: -0.02em;
+  color: var(--colored-text-color);
+  margin-bottom: .75rem;
+}
+
+.metricas .item .title {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--dark-text-color);
+  margin-bottom: .5rem;
+}
+
+.metricas .item .text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--medium-text-color);
+  margin-bottom: 7.5rem;
 }
 /*# sourceMappingURL=style.css.map */
