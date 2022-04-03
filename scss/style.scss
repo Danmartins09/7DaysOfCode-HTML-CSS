@@ -16,6 +16,26 @@
     font-size: 16px;
     line-height: 24px;
   }
+  h2 {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--colored-text-color);
+    margin-bottom: 1rem;
+  }
+  h5 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: var(--dark-text-color);
+    margin-bottom: 1.25rem;
+  }
 }
 
 :root {
@@ -23,6 +43,8 @@
   --medium-text-color: #667085;
   --dark-text-color: #101828;
   --colored-text-color: #8e2424;
+  --form-bg-color: #f9fafb;
+  --rights-color: #98a2b3;
 }
 .container {
   max-width: 1200px;
@@ -45,18 +67,18 @@
   display: flex;
   justify-content: flex-start;
 }
-.buttom {
+.button {
   grid-column: 3/4;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  button {
-    padding: 10px 18px;
-    border: none;
-    border-radius: 8px;
-    background: var(--colored-text-color);
-    color: var(--light-text-color);
-  }
+}
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: var(--colored-text-color);
+  color: var(--light-text-color);
 }
 
 // ************* HEADER ****************
@@ -65,9 +87,6 @@
   flex-direction: column;
   align-items: center;
   h2 {
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.5rem;
     color: var(--colored-text-color);
     margin: 96px 0 24px 0;
   }
@@ -85,16 +104,16 @@
     line-height: 1.875rem;
     text-align: center;
     color: var(--medium-text-color);
-    width: 791px;
+    max-width: 791px;
     margin-bottom: 107px;
   }
 }
 
 // ************* METRICAS ****************
-.metricas{
+.metricas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;  
+  justify-content: space-between;
   .item {
     display: flex;
     flex-direction: column;
@@ -105,14 +124,14 @@
       line-height: 4.5rem;
       letter-spacing: -0.02em;
       color: var(--colored-text-color);
-      margin-bottom: .75rem;
+      margin-bottom: 0.75rem;
     }
     .title {
       font-weight: 500;
       font-size: 1.125rem;
       line-height: 1.75rem;
       color: var(--dark-text-color);
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
     .text {
       font-weight: 400;
@@ -120,6 +139,233 @@
       line-height: 1.5rem;
       color: var(--medium-text-color);
       margin-bottom: 7.5rem;
+    }
+  }
+}
+
+// ************* VAGAS ****************
+.vagas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h4 {
+    background: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    padding: 4px 12px;
+  }
+  h5 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: var(--dark-text-color);
+    margin-bottom: 1.25rem;
+  }
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--medium-text-color);
+    margin-bottom: 4rem;
+  }
+  img {
+    width: 100%;
+  }
+  .jobs {
+    width: 48rem;
+    margin-top: 4rem;
+
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--dark-text-color);
+    }
+    .card {
+      border: 1px solid #eaecf0;
+      border-radius: 16px;
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      .jobTitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .details {
+        display: flex;
+        p {
+          margin: 2rem 24px 0 0;
+        }
+      }
+    }
+  }
+}
+
+// ************* DEPOIMENTOS ****************
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(142, 36, 36, 0.05);
+  padding: 4rem;
+  border-radius: 16px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  h5 {
+    font-weight: 500;
+    text-align: center;
+  }
+  .img {
+    margin: 2rem 0 1rem 0;
+  }
+  h2 {
+    font-weight: 500;
+    color: var(--dark-text-color);
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--medium-text-color);
+  }
+}
+// ************* FORM ****************
+
+.form {
+  background: var(--form-bg-color);
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 0;
+
+    h5 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: -0.02em;
+      color: var(--dark-text-color);
+      margin-bottom: 1.25rem;
+    }
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--medium-text-color);
+      margin-bottom: 2.5rem;
+    }
+    .cadastro {
+      display: flex;
+      .inputText {
+        padding: 12px 14px 12px 16px;
+        width: 360px;
+        height: 48px;
+        border: 1px solid #d0d5dd;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        margin-right: 1rem;
+      }
+    }
+
+    .rights {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--rights-color);
+      margin-top: 2rem;
+    }
+  }
+}
+
+// ************* MEDIA QUERIES ****************
+@media screen and (max-width: 600px) {
+  .container {
+    width: 300px !important;
+    margin: 0 auto !important;
+  }
+  .header {
+    h3 {
+      font-size: 2.5rem;
+    }
+    p {
+      margin-bottom: 60px;
+      text-align: left;
+    }
+  }
+  .metricas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    .item {
+      .number {
+        font-size: 3rem;
+      }
+      .text {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  .vagas {
+    img {
+      width: 100vw;
+    }
+    .jobs {
+      width: 18.75rem !important;
+      margin-top: 2.5rem;
+
+      .card {
+        .jobTitle {
+          margin-bottom: 1rem;
+        }
+        .details {
+          display: block;
+          p {
+            margin: 0 0 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+
+  .depoimentos {
+    padding: 2rem 1rem;
+    h5{
+      font-size: 1.25rem;
+      line-height: 36px;
+      text-align: left;
+    }
+    .img {
+      margin: 1rem 0;
+    }
+  }
+
+  .form {
+    .container {
+      padding: 3rem 0;
+      .cadastro {
+        flex-direction: column;
+        .inputText {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+        .btn {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+
+  .vagas {
+    .jobs {
+      width: 37.25rem;
     }
   }
 }

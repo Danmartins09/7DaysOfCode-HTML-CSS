@@ -20,11 +20,36 @@
   line-height: 24px;
 }
 
+* h2 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+* h4 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--colored-text-color);
+  margin-bottom: 1rem;
+}
+
+* h5 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: var(--dark-text-color);
+  margin-bottom: 1.25rem;
+}
+
 :root {
   --light-text-color: #ffffff;
   --medium-text-color: #667085;
   --dark-text-color: #101828;
   --colored-text-color: #8e2424;
+  --form-bg-color: #f9fafb;
+  --rights-color: #98a2b3;
 }
 
 .container {
@@ -62,7 +87,7 @@
           justify-content: flex-start;
 }
 
-.buttom {
+.button {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -77,7 +102,7 @@
           justify-content: flex-end;
 }
 
-.buttom button {
+.btn {
   padding: 10px 18px;
   border: none;
   border-radius: 8px;
@@ -99,9 +124,6 @@
 }
 
 .header h2 {
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5rem;
   color: var(--colored-text-color);
   margin: 96px 0 24px 0;
 }
@@ -121,7 +143,7 @@
   line-height: 1.875rem;
   text-align: center;
   color: var(--medium-text-color);
-  width: 791px;
+  max-width: 791px;
   margin-bottom: 107px;
 }
 
@@ -153,7 +175,7 @@
   line-height: 4.5rem;
   letter-spacing: -0.02em;
   color: var(--colored-text-color);
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .metricas .item .title {
@@ -161,7 +183,7 @@
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: var(--dark-text-color);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .metricas .item .text {
@@ -170,5 +192,265 @@
   line-height: 1.5rem;
   color: var(--medium-text-color);
   margin-bottom: 7.5rem;
+}
+
+.vagas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vagas h4 {
+  background: rgba(142, 36, 36, 0.05);
+  border-radius: 16px;
+  padding: 4px 12px;
+}
+
+.vagas h5 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: var(--dark-text-color);
+  margin-bottom: 1.25rem;
+}
+
+.vagas p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--medium-text-color);
+  margin-bottom: 4rem;
+}
+
+.vagas img {
+  width: 100%;
+}
+
+.vagas .jobs {
+  width: 48rem;
+  margin-top: 4rem;
+}
+
+.vagas .jobs .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-text-color);
+}
+
+.vagas .jobs .card {
+  border: 1px solid #eaecf0;
+  border-radius: 16px;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+}
+
+.vagas .jobs .card .jobTitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.vagas .jobs .card .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vagas .jobs .card .details p {
+  margin: 2rem 24px 0 0;
+}
+
+.depoimentos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(142, 36, 36, 0.05);
+  padding: 4rem;
+  border-radius: 16px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.depoimentos h5 {
+  font-weight: 500;
+  text-align: center;
+}
+
+.depoimentos .img {
+  margin: 2rem 0 1rem 0;
+}
+
+.depoimentos h2 {
+  font-weight: 500;
+  color: var(--dark-text-color);
+}
+
+.depoimentos p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--medium-text-color);
+}
+
+.form {
+  background: var(--form-bg-color);
+}
+
+.form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem 0;
+}
+
+.form .container h5 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: var(--dark-text-color);
+  margin-bottom: 1.25rem;
+}
+
+.form .container p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--medium-text-color);
+  margin-bottom: 2.5rem;
+}
+
+.form .container .cadastro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form .container .cadastro .inputText {
+  padding: 12px 14px 12px 16px;
+  width: 360px;
+  height: 48px;
+  border: 1px solid #d0d5dd;
+  -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.form .container .rights {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--rights-color);
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 300px !important;
+    margin: 0 auto !important;
+  }
+  .header h3 {
+    font-size: 2.5rem;
+  }
+  .header p {
+    margin-bottom: 60px;
+    text-align: left;
+  }
+  .metricas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .metricas .item .number {
+    font-size: 3rem;
+  }
+  .metricas .item .text {
+    margin-bottom: 4rem;
+  }
+  .vagas img {
+    width: 100vw;
+  }
+  .vagas .jobs {
+    width: 18.75rem !important;
+    margin-top: 2.5rem;
+  }
+  .vagas .jobs .card .jobTitle {
+    margin-bottom: 1rem;
+  }
+  .vagas .jobs .card .details {
+    display: block;
+  }
+  .vagas .jobs .card .details p {
+    margin: 0 0 0.5rem 0;
+  }
+  .depoimentos {
+    padding: 2rem 1rem;
+  }
+  .depoimentos h5 {
+    font-size: 1.25rem;
+    line-height: 36px;
+    text-align: left;
+  }
+  .depoimentos .img {
+    margin: 1rem 0;
+  }
+  .form .container {
+    padding: 3rem 0;
+  }
+  .form .container .cadastro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form .container .cadastro .inputText {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .form .container .cadastro .btn {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+  .vagas .jobs {
+    width: 37.25rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
